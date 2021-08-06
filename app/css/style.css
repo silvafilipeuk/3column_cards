@@ -1,0 +1,130 @@
+html, body {
+  font-size: 0.938rem;
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  margin-top: 1.875rem;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  text-decoration: none;
+  border-radius: 3.125rem;
+  text-align: center;
+  font-weight: 700;
+  width: 9.1875rem;
+  height: 3.125rem;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20.625rem;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.button-or {
+  color: #e38826;
+}
+
+.button-or:hover {
+  background-color: #e38826;
+  border: solid 0.1875rem rgba(255, 255, 255, 0.75);
+}
+
+.button-dc:hover {
+  background-color: #006970;
+  border: solid 0.1875rem rgba(255, 255, 255, 0.75);
+}
+
+.button-vdc:hover {
+  background-color: #004241;
+  border: solid 0.1875rem rgba(255, 255, 255, 0.75);
+}
+
+.button-dc {
+  color: #006970;
+}
+
+.button-vdc {
+  color: #004241;
+}
+
+.box {
+  color: rgba(255, 255, 255, 0.75);
+  border-radius: 0;
+  padding: 2.8125rem;
+  padding-right: 3.125rem;
+  margin: auto;
+}
+
+.box:first-child {
+  border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.box:last-child {
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.box-orange {
+  background-color: #e38826;
+}
+
+.box-dc {
+  background-color: #006970;
+}
+
+.box-vdc {
+  background-color: #004241;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 992px) {
+  p {
+    margin-top: 2.1875rem;
+    margin-bottom: 5rem;
+  }
+  .box {
+    border-radius: 0;
+  }
+  .box:first-child {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  .box:last-child {
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
+  .container {
+    flex-direction: row;
+    height: 100%;
+    width: 52.1875rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

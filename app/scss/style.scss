@@ -1,0 +1,143 @@
+// Colors
+
+// Primary colors
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+
+// Neutral colors
+
+$TranspWhite: hsla(0, 0%, 100%, 0.75); // (paragraphs)
+$VeryLightGray : hsl(0, 0%, 95%); // (background, headings, buttons)
+
+html, body {
+    font-size: 0.938rem; // 15px
+    background-color: $VeryLightGray;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100%;
+}
+
+h1 {
+    color: $VeryLightGray;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin-top: 1.875rem; // 30px
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    margin-top: 1.875rem; //30px
+    margin-bottom: 1.875rem; //30px
+}
+
+button {
+    background-color: $VeryLightGray;
+    border: none;
+    text-decoration: none;
+    border-radius: 3.125rem;//50px
+    text-align: center;
+    font-weight: 700;
+    width: 9.1875rem; //147 px
+    height: 3.125rem; //50 px
+}
+
+button:hover {
+    color: $TranspWhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;    
+    width: 20.625rem; //330 px
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.button-or {
+    color: $BrightOrange;
+}
+
+.button-or:hover {
+    background-color: $BrightOrange;
+    border: solid 0.1875rem $TranspWhite;
+}
+
+.button-dc:hover {
+    background-color: $DarkCyan;
+    border: solid 0.1875rem $TranspWhite;
+}
+
+.button-vdc:hover {
+    background-color: $VeryDarkCyan;
+    border: solid 0.1875rem $TranspWhite;
+}
+
+.button-dc {
+    color: $DarkCyan;
+}
+
+.button-vdc {
+    color: $VeryDarkCyan;
+}
+
+.box {
+    color: $TranspWhite;
+    border-radius: 0;
+    padding: 2.8125rem;
+    padding-right: 3.125rem;
+    margin: auto;
+}
+
+.box:first-child {
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+
+.box:last-child {
+    border-radius: 0 0 0.625rem 0.625rem;
+}    
+
+.box-orange {
+    background-color: $BrightOrange;
+}
+
+.box-dc {
+    background-color: $DarkCyan;
+}
+
+.box-vdc {
+    background-color: $VeryDarkCyan;
+}
+
+.attribution { font-size: 0.6875rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+// Media Queries
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+    p {
+        margin-top: 2.1875rem; //35px
+        margin-bottom: 5rem; //80px
+    }
+
+    .box {
+        border-radius: 0;
+    }
+    
+    .box:first-child {
+        border-radius: 0.625rem 0 0 0.625rem;
+    }
+    
+    .box:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+    }  
+
+    .container {
+        flex-direction: row;
+        height: 100%;
+        width: 52.1875rem; // 835px
+    }
+}
