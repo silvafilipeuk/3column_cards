@@ -34,6 +34,11 @@ button:hover {
   color: rgba(255, 255, 255, 0.75);
 }
 
+main {
+  margin: auto;
+  height: 100%;
+}
+
 .container {
   display: flex;
   flex-direction: column;

@@ -46,6 +46,10 @@ button:hover {
     color: $TranspWhite;
 }
 
+main {
+    margin: auto;
+    height: 100%;
+}
 .container {
     display: flex;
     flex-direction: column;    
